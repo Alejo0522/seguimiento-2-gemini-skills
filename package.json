@@ -1,0 +1,17 @@
+{
+  "name": "gemini-skills-ingenieria-informatica",
+  "version": "1.0.0",
+  "description": "Proyecto universitario de arquitectura por capas para la integración de Skills de Gemini en Ingeniería Informática",
+  "type": "module",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": [
+    "gemini",
+    "layered-architecture",
+    "software-engineering",
+    "frontend-architecture"
+  ],
+  "author": "Proyecto Universitario de Ingeniería Informática",
+  "license": "MIT"
+}

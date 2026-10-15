@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Desarrollo e Integración de Skills de Gemini en Ingeniería Informática</title>
+  <meta name="description" content="Proyecto universitario sobre integración de Skills de IA Gemini en la ingeniería de software y sistemas bajo una arquitectura estricta por capas.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <!-- ==============================================================================
+       BARRA DE NAVEGACIÓN
+       ============================================================================== -->
+  <header class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="brand">
+        <div class="brand-icon">✨</div>
+        <span>Gemini<span class="gradient-text">Skills</span>.eng</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero">Inicio</a></li>
+        <li><a href="#infografia-section">Infografía</a></li>
+        <li><a href="#video-section">Video Explicativo</a></li>
+        <li><a href="#skill-section">Simulador Skill</a></li>
+        <li><a href="#arquitectura-section">Arquitectura</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <span class="badge-layer">Capa de Presentación</span>
+        <a href="#skill-section" class="btn btn-primary btn-sm">Probar Skill</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==============================================================================
+       HERO SECTION
+       ============================================================================== -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-pill">
+        <span class="dot"></span>
+        <span>Proyecto Universitario • Ingeniería Informática • Seguimiento 2</span>
+      </div>
+
+      <h1 class="hero-title">
+        Desarrollo e Integración de <span class="gradient-text">Skills de Gemini</span> aplicados a la Ingeniería Informática
+      </h1>
+
+      <p class="hero-subtitle">
+        Potenciando el ciclo de vida del software mediante agentes inteligentes especializados:
+        desde la generación de microservicios resilientes y hardening de redes, hasta
+        la optimización de consultas SQL complejas con validación arquitectónica estricta.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#skill-section" class="btn btn-primary">
+          <span>⚡ Ejecutar Skill en Vivo</span>
+        </a>
+        <a href="#infografia-section" class="btn btn-secondary">
+          <span>📊 Ver Infografía Conceptual</span>
+        </a>
+        <a href="#video-section" class="btn btn-secondary">
+          <span>🎬 Ver Video de Flow</span>
+        </a>
+      </div>
+
+      <!-- Métricas destacadas del proyecto -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-value">3 Capas</div>
+          <div class="stat-label">UI ➔ Lógica ➔ Acceso a Datos</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">&lt; 850 ms</div>
+          <div class="stat-label">Latencia Promedio de Respuesta</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">100% Modulares</div>
+          <div class="stat-label">ES6 Modules Desacoplados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value">7 Entregables</div>
+          <div class="stat-label">Documentados en el README</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       SECCIÓN 1: INFOGRAFÍA CONCEPTUAL
+       ============================================================================== -->
+  <section id="infografia-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Entregable 2 • Modelo Conceptual</span>
+        <h2 class="section-title">Infografía del Flujo de Trabajo de la Skill</h2>
+        <p class="section-desc">
+          Diagrama conceptual de alto nivel que ilustra cómo los requerimientos de ingeniería
+          son procesados por la Skill semántica de Gemini, desacoplada mediante la arquitectura por capas.
+        </p>
+      </div>
+
+      <div class="media-card">
+        <div class="infografia-wrapper">
+          <!-- Placeholder de imagen con el ID requerido y ruta a la ilustración SVG -->
+          <img 
+            id="infografia" 
+            src="./assets/infografia-conceptual.svg" 
+            alt="Infografía conceptual generada con ChatGPT"
+            class="infografia-img"
+          />
+        </div>
+        <div class="media-caption-bar">
+          <div class="caption-required-text">
+            <span>🎨</span>
+            <strong>Infografía conceptual generada con ChatGPT</strong>
+          </div>
+          <span class="caption-tag">Prompt Engineering &amp; DALL-E / ChatGPT</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       SECCIÓN 2: VIDEO EXPLICATIVO PRODUCIDO CON FLOW
+       ============================================================================== -->
+  <section id="video-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Entregable 3 • Multimedia y Demostración</span>
+        <h2 class="section-title">Video Explicativo de la Solución</h2>
+        <p class="section-desc">
+          Demostración audiovisual guiada sobre la arquitectura técnica, la integración
+          de la API de Gemini y el caso de uso aplicado a la ingeniería informática.
+        </p>
+      </div>
+
+      <div class="media-card">
+        <div class="video-container" id="video-player-container">
+          <!-- Contenedor interactivo del video -->
+          <div class="video-player-mockup" id="video-mockup">
+            <img 
+              src="./assets/video-thumbnail.svg" 
+              alt="Video explicativo producido con Flow"
+              class="video-poster-img"
+            />
+            
+            <div class="video-overlay" id="btn-play-video" title="Reproducir video demostrativo">
+              <div class="play-button-custom">▶</div>
+              <p style="margin-top: 14px; color: #fff; font-weight: 600; text-shadow: 0 2px 10px rgba(0,0,0,0.8);">
+                Haga clic para reproducir el recorrido del proyecto
+              </p>
+            </div>
+
+            <div class="video-controls-bottom">
+              <span style="font-size: 0.85rem; font-family: var(--font-mono); color: #94a3b8;">▶ 01:24 / 04:35</span>
+              <div class="video-progress-bar">
+                <div class="video-progress-fill"></div>
+              </div>
+              <span class="caption-tag" style="background: rgba(99,102,241,0.2); color: #818cf8; border-color: rgba(99,102,241,0.4);">
+                1080p HD
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="media-caption-bar">
+          <div class="caption-required-text">
+            <span>🎬</span>
+            <strong>Video explicativo producido con Flow</strong>
+          </div>
+          <span class="caption-tag">Animación y Locución en Flow Studio</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       SECCIÓN 3: SKILL DE GEMINI (CONSOLA INTERACTIVA Y CAPAS)
+       ============================================================================== -->
+  <section id="skill-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Entregable 6 • Simulador Interactivo</span>
+        <h2 class="section-title">Consola de Ejecución de la Skill de Gemini</h2>
+        <p class="section-desc">
+          Experimenta cómo la Skill asiste en tareas de desarrollo crítico como la creación de microservicios,
+          hardening de red Linux o afinamiento de consultas de bases de datos. 
+          Al pulsar el botón, observa cómo la solicitud atraviesa de forma limpia cada una de las 3 capas.
+        </p>
+      </div>
+
+      <div class="skill-layout">
+        <div class="interactive-panel">
+          
+          <!-- Selector de escenarios pre-configurados -->
+          <div class="preset-selector-label">
+            <span>1. Selecciona un Escenario de Ingeniería Informática:</span>
+            <span style="font-size: 0.8rem; color: var(--text-muted); font-weight: normal;">Presets Especializados</span>
+          </div>
+
+          <div class="preset-grid" id="preset-grid">
+            <button type="button" class="preset-chip active" data-scenario="microservices" id="chip-microservices">
+              <div class="preset-chip-icon">🚀</div>
+              <div class="preset-chip-info">
+                <h4>Microservicio Go &amp; Docker</h4>
+                <p>Scaffolding con JWT y endpoints de salud</p>
+              </div>
+            </button>
+
+            <button type="button" class="preset-chip" data-scenario="network" id="chip-network">
+              <div class="preset-chip-icon">🛡️</div>
+              <div class="preset-chip-info">
+                <h4>Hardening de Red &amp; UFW</h4>
+                <p>Reglas perimetrales y sysctl en Linux</p>
+              </div>
+            </button>
+
+            <button type="button" class="preset-chip" data-scenario="sql" id="chip-sql">
+              <div class="preset-chip-icon">⚡</div>
+              <div class="preset-chip-info">
+                <h4>Optimización SQL &amp; B-Tree</h4>
+                <p>Index Only Scan y reducción de latencia</p>
+              </div>
+            </button>
+
+            <button type="button" class="preset-chip" data-scenario="testing" id="chip-testing">
+              <div class="preset-chip-icon">🧪</div>
+              <div class="preset-chip-info">
+                <h4>Testing Automatizado (QA)</h4>
+                <p>Suite con Vitest / Jest y cobertura</p>
+              </div>
+            </button>
+          </div>
+
+          <!-- Prompt personalizado opcional -->
+          <div class="prompt-area-wrapper">
+            <label for="custom-prompt">2. O escribe una consulta de ingeniería personalizada (opcional):</label>
+            <textarea 
+              id="custom-prompt" 
+              class="prompt-textarea" 
+              placeholder="Ej: 'Generar una configuración de Nginx con balanceo de carga de menor latencia y rate-limiting de 60 req/min'..."
+            ></textarea>
+          </div>
+
+          <!-- Barra de acción principal -->
+          <div class="actions-bar">
+            <div style="font-size: 0.85rem; color: var(--text-secondary);">
+              <span>Motor Semántico: </span>
+              <strong style="color: var(--accent-cyan);">Google Gemini 1.5 Pro (Simulado)</strong>
+            </div>
+
+            <!-- Botón interactivo requerido -->
+            <button id="btn-ejecutar-skill" class="btn btn-primary">
+              <span id="btn-icon">⚡</span>
+              <span id="btn-text">Ejecutar Skill de Gemini</span>
+            </button>
+          </div>
+
+          <!-- Visualizador en vivo de la Trazabilidad entre Capas -->
+          <div class="architecture-pipeline">
+            <div class="pipeline-header">
+              <span>Trazabilidad de Ejecución por Capas</span>
+              <span id="pipeline-status-text" style="color: var(--accent-cyan);">Estado: En espera de ejecución</span>
+            </div>
+
+            <div class="pipeline-nodes">
+              <div class="pipeline-node" id="node-presentation">
+                <div class="node-status-dot"></div>
+                <div>
+                  <span class="node-label">1. Presentación</span>
+                  <span class="node-sub">UI &amp; Eventos DOM</span>
+                </div>
+              </div>
+
+              <span class="pipeline-arrow">➔</span>
+
+              <div class="pipeline-node" id="node-business">
+                <div class="node-status-dot"></div>
+                <div>
+                  <span class="node-label">2. Lógica de Negocio</span>
+                  <span class="node-sub">skillService.js</span>
+                </div>
+              </div>
+
+              <span class="pipeline-arrow">➔</span>
+
+              <div class="pipeline-node" id="node-data">
+                <div class="node-status-dot"></div>
+                <div>
+                  <span class="node-label">3. Acceso a Datos</span>
+                  <span class="node-sub">apiMock.js (DAL)</span>
+                </div>
+              </div>
+
+              <span class="pipeline-arrow">➔</span>
+
+              <div class="pipeline-node" id="node-gemini">
+                <div class="node-status-dot"></div>
+                <div>
+                  <span class="node-label">4. Gemini AI</span>
+                  <span class="node-sub">Inferencia Semántica</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Terminal de salida / Visualizador de la respuesta -->
+          <div class="output-terminal">
+            <div class="terminal-header">
+              <div class="terminal-dots">
+                <span class="terminal-dot dot-red"></span>
+                <span class="terminal-dot dot-yellow"></span>
+                <span class="terminal-dot dot-green"></span>
+              </div>
+              <div class="terminal-title" id="terminal-title">
+                gemini-skill-response.md
+              </div>
+              <div class="terminal-actions">
+                <button type="button" class="btn-terminal" id="btn-copy-code" title="Copiar código al portapapeles">
+                  📋 Copiar
+                </button>
+              </div>
+            </div>
+
+            <!-- Cuerpo interactivo del terminal -->
+            <div class="terminal-body" id="terminal-content">
+Presiona el botón "Ejecutar Skill de Gemini" para invocar la arquitectura por capas.
+El sistema validará el escenario en la Capa de Lógica de Negocio, solicitará la respuesta a la Capa de Acceso a Datos y renderizará aquí el resultado estructurado de la Skill.
+            </div>
+
+            <!-- Tira de métricas técnicas devueltas por la Lógica de Negocio -->
+            <div class="metrics-strip" id="metrics-strip">
+              <div class="metric-item">
+                <span class="metric-name">Latencia de Red</span>
+                <span class="metric-val" id="metric-latency">-- ms</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-name">Tokens Consumidos</span>
+                <span class="metric-val" id="metric-tokens">-- tokens</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-name">Costo Estimado</span>
+                <span class="metric-val" id="metric-cost">-- USD</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-name">Ahorro en Horas Ing.</span>
+                <span class="metric-val" id="metric-saved">-- min</span>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       SECCIÓN 4: EXPLICACIÓN DE LA ARQUITECTURA POR CAPAS
+       ============================================================================== -->
+  <section id="arquitectura-section" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Fundamento Arquitectónico</span>
+        <h2 class="section-title">Arquitectura por Capas en el Frontend</h2>
+        <p class="section-desc">
+          Estructura estricta para garantizar bajo acoplamiento, alta cohesión y testeabilidad
+          sin depender de frameworks pesados, aplicando buenas prácticas de Ingeniería de Software.
+        </p>
+      </div>
+
+      <div class="architecture-grid">
+        <!-- Capa 1 -->
+        <div class="layer-card layer-1">
+          <span class="layer-badge">CAPA 1</span>
+          <h3 class="layer-title">Capa de Presentación (UI)</h3>
+          <span class="layer-folder">/presentation</span>
+          <p style="color: var(--text-secondary); font-size: 0.92rem;">
+            Responsable exclusivamente de la interfaz de usuario, accesibilidad, maquetación semántica y captura de eventos.
+          </p>
+          <ul class="layer-list">
+            <li><strong>index.html:</strong> Estructura del DOM y componentes.</li>
+            <li><strong>styles.css:</strong> Estilos, variables CSS y diseño responsive.</li>
+            <li><strong>Controlador de Vista:</strong> Delega llamadas al servicio sin tocar datos.</li>
+          </ul>
+        </div>
+
+        <!-- Capa 2 -->
+        <div class="layer-card layer-2">
+          <span class="layer-badge">CAPA 2</span>
+          <h3 class="layer-title">Capa de Lógica de Negocio</h3>
+          <span class="layer-folder">/business_logic</span>
+          <p style="color: var(--text-secondary); font-size: 0.92rem;">
+            Orquesta las operaciones, aplica reglas de validación de ingeniería, calcula métricas de costos y normaliza modelos.
+          </p>
+          <ul class="layer-list">
+            <li><strong>skillService.js:</strong> Servicio orquestador desacoplado del DOM.</li>
+            <li><strong>Validaciones:</strong> Control de tamaños, cuotas y formatos.</li>
+            <li><strong>Métricas:</strong> Estimación de tokens, costos y ahorro de tiempo.</li>
+          </ul>
+        </div>
+
+        <!-- Capa 3 -->
+        <div class="layer-card layer-3">
+          <span class="layer-badge">CAPA 3</span>
+          <h3 class="layer-title">Capa de Acceso a Datos (DAL)</h3>
+          <span class="layer-folder">/data_access</span>
+          <p style="color: var(--text-secondary); font-size: 0.92rem;">
+            Abstrae la comunicación con la API externa de Gemini. Simula respuestas asíncronas con latencia realista y códigos HTTP.
+          </p>
+          <ul class="layer-list">
+            <li><strong>apiMock.js:</strong> Cliente simulado con promesas y retardo.</li>
+            <li><strong>Repositorio:</strong> Base de conocimiento de prompts y respuestas.</li>
+            <li><strong>Protocolo:</strong> Esquema con códigos de estado (200, 400, 404).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==============================================================================
+       FOOTER
+       ============================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="brand" style="margin-bottom: 14px;">
+            <div class="brand-icon">✨</div>
+            <span>Gemini<span class="gradient-text">Skills</span>.eng</span>
+          </div>
+          <p>
+            Proyecto académico universitario desarrollado para la asignatura de Ingeniería de Software / Seguimiento 2.
+            Implementación demostrativa de la integración de Modelos de Lenguaje (LLMs) mediante arquitectura por capas.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Enlaces del Proyecto</h4>
+          <ul class="footer-links">
+            <li>
+              <!-- Enlace simulado a GitHub requerido -->
+              <a href="https://github.com/universidad-informatica/gemini-skills-architecture" target="_blank" rel="noopener noreferrer">
+                <span>🐙</span> Repositorio en GitHub
+              </a>
+            </li>
+            <li>
+              <!-- Enlace simulado al Cuaderno de Datos requerido -->
+              <a href="https://colab.research.google.com/drive/universidad-gemini-cuaderno-datos" target="_blank" rel="noopener noreferrer">
+                <span>📓</span> Cuaderno de Datos (Notebook)
+              </a>
+            </li>
+            <li>
+              <a href="../README.md" target="_blank">
+                <span>📄</span> Documentación README.md
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Tecnologías</h4>
+          <ul class="footer-links">
+            <li><a href="#">HTML5 Semántico</a></li>
+            <li><a href="#">Vanilla CSS3 Moderno</a></li>
+            <li><a href="#">ES6+ JavaScript Modules</a></li>
+            <li><a href="#">Google Gemini 1.5 API</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Proyecto Universitario de Ingeniería Informática. Todos los derechos reservados.
+        </div>
+        <div style="display: flex; gap: 16px;">
+          <span style="color: var(--accent-cyan);">Arquitectura por Capas</span>
+          <span>•</span>
+          <span>Google Gemini AI</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==============================================================================
+       CONTROLADOR DE LA CAPA DE PRESENTACIÓN (UI Controller)
+       Importa el servicio desde la Capa de Lógica de Negocio respetando la jerarquía.
+       ============================================================================== -->
+  <script type="module">
+    import { skillService } from '../business_logic/skillService.js';
+
+    // Elementos del DOM en la Capa de Presentación
+    const btnEjecutar = document.getElementById('btn-ejecutar-skill');
+    const btnText = document.getElementById('btn-text');
+    const btnIcon = document.getElementById('btn-icon');
+    const customPromptInput = document.getElementById('custom-prompt');
+    const presetChips = document.querySelectorAll('.preset-chip');
+    
+    // Trazabilidad visual de nodos
+    const nodePresentation = document.getElementById('node-presentation');
+    const nodeBusiness = document.getElementById('node-business');
+    const nodeData = document.getElementById('node-data');
+    const nodeGemini = document.getElementById('node-gemini');
+    const pipelineStatusText = document.getElementById('pipeline-status-text');
+
+    // Terminal de salida y métricas
+    const terminalTitle = document.getElementById('terminal-title');
+    const terminalContent = document.getElementById('terminal-content');
+    const btnCopyCode = document.getElementById('btn-copy-code');
+    const metricLatency = document.getElementById('metric-latency');
+    const metricTokens = document.getElementById('metric-tokens');
+    const metricCost = document.getElementById('metric-cost');
+    const metricSaved = document.getElementById('metric-saved');
+
+    // Video mockup interactivo
+    const btnPlayVideo = document.getElementById('btn-play-video');
+    const videoMockup = document.getElementById('video-mockup');
+
+    // Estado local de la vista
+    let selectedScenario = 'microservices';
+    let currentRawResponse = '';
+
+    // Manejador de selección de presets
+    presetChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        presetChips.forEach(c => c.classList.remove('active'));
+        chip.classList.add('active');
+        selectedScenario = chip.getAttribute('data-scenario');
+      });
+    });
+
+    // Resetear indicadores del pipeline de arquitectura
+    function resetPipelineIndicators() {
+      [nodePresentation, nodeBusiness, nodeData, nodeGemini].forEach(node => {
+        node.classList.remove('active', 'done');
+      });
+    }
+
+    // Actualizar pipeline visual para ilustrar la traza de capas
+    function updatePipelineStage(stage, label) {
+      pipelineStatusText.textContent = `Estado: ${label}`;
+      if (stage === 'presentation') {
+        nodePresentation.classList.add('active');
+      } else if (stage === 'business') {
+        nodePresentation.classList.remove('active');
+        nodePresentation.classList.add('done');
+        nodeBusiness.classList.add('active');
+      } else if (stage === 'data') {
+        nodeBusiness.classList.remove('active');
+        nodeBusiness.classList.add('done');
+        nodeData.classList.add('active');
+        nodeGemini.classList.add('active');
+      } else if (stage === 'completed') {
+        [nodePresentation, nodeBusiness, nodeData, nodeGemini].forEach(node => {
+          node.classList.remove('active');
+          node.classList.add('done');
+        });
+        pipelineStatusText.textContent = `Estado: Respuesta procesada con éxito por las 3 capas`;
+      }
+    }
+
+    // Evento del botón interactivo para ejecutar la Skill
+    btnEjecutar.addEventListener('click', async () => {
+      const customPrompt = customPromptInput.value.trim();
+
+      // UI: Estado de Carga
+      btnEjecutar.disabled = true;
+      btnIcon.textContent = '⏳';
+      btnText.textContent = 'Procesando en Capas...';
+      
+      resetPipelineIndicators();
+      updatePipelineStage('presentation', 'Capa de Presentación capturando evento');
+
+      terminalContent.innerHTML = `
+        <div class="loader-wrapper">
+          <div class="gemini-spinner"></div>
+          <p style="color: var(--text-secondary); font-family: var(--font-sans);">
+            Orquestando solicitud a través de la Capa de Negocio y Acceso a Datos...
+          </p>
+        </div>
+      `;
+
+      try {
+        // Transición visual a la Capa de Lógica de Negocio
+        setTimeout(() => updatePipelineStage('business', 'Capa de Negocio: Validando reglas y preparando DTO'), 200);
+
+        // Transición visual a la Capa de Acceso a Datos
+        setTimeout(() => updatePipelineStage('data', 'Capa de Datos: Invocando API Mock de Gemini'), 450);
+
+        // =========================================================================
+        // LLAMADA A LA CAPA DE LÓGICA DE NEGOCIO (skillService)
+        // La Capa de Presentación SOLO se comunica con la Capa de Negocio.
+        // =========================================================================
+        const result = await skillService.executeSkill(selectedScenario, customPrompt);
+
+        // Éxito: Actualizar pipeline visual a completado
+        updatePipelineStage('completed', 'Ejecución exitosa');
+
+        // Guardar respuesta para copia
+        currentRawResponse = result.payload.rawMarkdown;
+
+        // Actualizar encabezado del terminal
+        terminalTitle.textContent = `${result.modelInfo.name} • ${result.modelInfo.category} [${result.traceId}]`;
+
+        // Renderizado en la Capa de Presentación
+        terminalContent.textContent = result.payload.formattedContent;
+
+        // Actualizar métricas retornadas por la capa de negocio
+        metricLatency.textContent = `${result.metrics.latencyMs} ms`;
+        metricTokens.textContent = `${result.metrics.totalTokens} tokens`;
+        metricCost.textContent = result.metrics.estimatedCostUSD;
+        metricSaved.textContent = result.metrics.timeSavedEstimate;
+
+      } catch (err) {
+        console.error("Error en la ejecución:", err);
+        pipelineStatusText.textContent = `Estado: Fallo en la arquitectura (${err.error || err.message})`;
+        terminalContent.innerHTML = `
+          <div style="color: var(--accent-red); padding: 16px;">
+            <h4>⚠️ Error detectado en la validación:</h4>
+            <p>${err.error || err.message || 'No se pudo completar la operación.'}</p>
+          </div>
+        `;
+      } finally {
+        // Restaurar estado del botón
+        btnEjecutar.disabled = false;
+        btnIcon.textContent = '⚡';
+        btnText.textContent = 'Ejecutar Skill de Gemini';
+      }
+    });
+
+    // Copiar código del terminal al portapapeles
+    btnCopyCode.addEventListener('click', async () => {
+      if (!currentRawResponse) {
+        alert("Primero ejecute la Skill para obtener una respuesta que copiar.");
+        return;
+      }
+      try {
+        await navigator.clipboard.writeText(currentRawResponse);
+        const originalText = btnCopyCode.textContent;
+        btnCopyCode.textContent = "✓ Copiado!";
+        btnCopyCode.style.color = "var(--accent-green)";
+        setTimeout(() => {
+          btnCopyCode.textContent = originalText;
+          btnCopyCode.style.color = "";
+        }, 2000);
+      } catch (e) {
+        console.error("Error al copiar:", e);
+      }
+    });
+
+    // Reproductor interactivo de video (Flow)
+    btnPlayVideo.addEventListener('click', () => {
+      videoMockup.innerHTML = `
+        <div style="position: absolute; inset: 0; background: #030712; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 24px; text-align: center;">
+          <div style="font-size: 3rem; margin-bottom: 12px;">🎬</div>
+          <h3 style="color: #fff; margin-bottom: 8px;">Video explicativo producido con Flow</h3>
+          <p style="color: #94a3b8; max-width: 580px; font-size: 0.95rem; margin-bottom: 20px;">
+            [Simulación de Reproducción]: En este video se expone el diseño del prompt de sistema para Gemini,
+            la arquitectura de 3 capas y los casos de uso para ingenieros de software.
+          </p>
+          <div style="display: flex; gap: 12px;">
+            <a href="https://flow.google.com" target="_blank" class="btn btn-primary btn-sm">Abrir en Flow</a>
+            <button onclick="location.reload()" class="btn btn-secondary btn-sm">Reiniciar Vista</button>
+          </div>
+        </div>
+      `;
+    });
+  </script>
+</body>
+</html>

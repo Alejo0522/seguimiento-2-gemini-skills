@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="vidBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="40%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="btnPlayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1" />
+      <stop offset="50%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#ec4899" />
+    </linearGradient>
+    <filter id="playGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Player Background -->
+  <rect width="1280" height="720" fill="url(#vidBg)" rx="16" />
+
+  <!-- Code Editor Window Mockup in Video Background -->
+  <g transform="translate(140, 100)" opacity="0.45">
+    <rect width="1000" height="520" rx="12" fill="#030712" stroke="#374151" stroke-width="2" />
+    <!-- Window buttons -->
+    <circle cx="30" cy="25" r="7" fill="#ef4444" />
+    <circle cx="55" cy="25" r="7" fill="#f59e0b" />
+    <circle cx="80" cy="25" r="7" fill="#10b981" />
+    <text x="120" y="30" fill="#6b7280" font-family="'JetBrains Mono', monospace" font-size="14">gemini-skill-orchestrator.ts — Flow Studio Producer</text>
+    <line x1="0" y1="50" x2="1000" y2="50" stroke="#1f2937" stroke-width="1.5" />
+    <!-- Fake code lines -->
+    <rect x="40" y="80" width="340" height="12" rx="4" fill="#6366f1" opacity="0.8" />
+    <rect x="40" y="110" width="520" height="12" rx="4" fill="#a855f7" opacity="0.7" />
+    <rect x="70" y="140" width="410" height="12" rx="4" fill="#06b6d4" opacity="0.6" />
+    <rect x="70" y="170" width="490" height="12" rx="4" fill="#64748b" opacity="0.5" />
+    <rect x="40" y="210" width="280" height="12" rx="4" fill="#10b981" opacity="0.7" />
+    <rect x="40" y="240" width="600" height="12" rx="4" fill="#3b82f6" opacity="0.6" />
+    <rect x="70" y="270" width="450" height="12" rx="4" fill="#94a3b8" opacity="0.4" />
+  </g>
+
+  <!-- Big Play Button Center -->
+  <g transform="translate(640, 360)">
+    <circle cx="0" cy="0" r="65" fill="rgba(99, 102, 241, 0.25)" filter="url(#playGlow)" />
+    <circle cx="0" cy="0" r="50" fill="url(#btnPlayGrad)" />
+    <polygon points="-12,-22 25,0 -12,22" fill="#ffffff" />
+  </g>
+
+  <!-- Video Info Overlay -->
+  <g transform="translate(640, 520)">
+    <rect x="-350" y="-30" width="700" height="60" rx="30" fill="rgba(15, 23, 42, 0.85)" stroke="rgba(255, 255, 255, 0.15)" />
+    <text x="0" y="8" text-anchor="middle" fill="#ffffff" font-family="'Plus Jakarta Sans', system-ui, sans-serif" font-size="18" font-weight="600">
+      Video explicativo producido con Flow
+    </text>
+  </g>
+
+  <!-- Top Badges -->
+  <g transform="translate(80, 50)">
+    <rect width="180" height="34" rx="17" fill="rgba(99, 102, 241, 0.3)" stroke="#6366f1" stroke-width="1" />
+    <circle cx="20" cy="17" r="5" fill="#22c55e" />
+    <text x="35" y="22" fill="#e0e7ff" font-family="system-ui, sans-serif" font-size="13" font-weight="600">PRODUCCIÓN FLOW</text>
+  </g>
+  <g transform="translate(1080, 50)">
+    <rect width="120" height="34" rx="17" fill="rgba(0, 0, 0, 0.5)" stroke="rgba(255,255,255,0.2)" stroke-width="1" />
+    <text x="60" y="22" text-anchor="middle" fill="#cbd5e1" font-family="'JetBrains Mono', monospace" font-size="13">04:35 min</text>
+  </g>
+</svg>
